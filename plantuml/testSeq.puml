@@ -1,16 +1,31 @@
 @startuml
-skinparam backgroundColor transparent
 
+skinparam backgroundColor transparent
 skinparam monochrome false
 skinparam shadowing true
-skinparam ArrowColor White
-skinparam ArrowFontColor White
-skinparam ActorBorderColor White
-skinparam SequenceBoxBorderColor White
-skinparam ParticipantBorderColor White
-skinparam SequenceLifeLineBorderColor White
+
+
+
+
+skinparam sequence {
+    
+    ArrowColor White
+    ArrowFontColor White
+    ParticipantBorderColor White
+
+
+    ParticipantBorderColor White
+    ParticipantBorderThickness 2
+    ParticipantBackgroundColor transparent
+    ParticipantFontColor White
+
+    LifeLineBorderColor White
+
+}
 
 !option handwritten true
+
+hide footbox
 
 Alice -> Bob: test
 @enduml
